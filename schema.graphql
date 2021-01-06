@@ -1,0 +1,15 @@
+type User {
+   id: ID!
+   firstName: String!
+   lastName: String!
+   fullName: String @lambda
+}
+
+type Todo {
+   id: ID!
+   title: String
+}
+
+type Query {
+  todoTitles: [String] @lambda
+}
